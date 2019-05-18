@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="5" name="Failed suite [Tests]" data-provider-thread-count="1">
+  <test name="Test1(failed)">
+    <classes>
+      <class name="pages.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="refreshPage"/>
+          <include name="setScreenshot"/>
+          <include name="verifyViewTour"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- pages.HomePageTest -->
+      <class name="pages.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="refreshPage"/>
+          <include name="setScreenshot"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- pages.LoginPageTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Tests] -->

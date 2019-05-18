@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Tests" duration-ms="72977" started-at="2019-05-18T12:06:32Z" finished-at="2019-05-18T12:07:45Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="37499" started-at="2019-05-18T12:06:32Z" finished-at="2019-05-18T12:07:10Z">
+      <class name="pages.HomePageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:pages.HomePageTest@cb5822]" name="init" is-config="true" duration-ms="8075" started-at="2019-05-18T14:06:33Z" finished-at="2019-05-18T14:06:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:pages.HomePageTest@cb5822]" name="refreshPage" is-config="true" duration-ms="1075" started-at="2019-05-18T14:06:41Z" finished-at="2019-05-18T14:06:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="searchPackagesForAvailableCountries()[pri:0, instance:pages.HomePageTest@cb5822]" name="searchPackagesForAvailableCountries" duration-ms="2424" started-at="2019-05-18T14:06:42Z" finished-at="2019-05-18T14:06:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPackagesForAvailableCountries -->
+        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:pages.HomePageTest@cb5822]" name="setScreenshot" is-config="true" duration-ms="1" started-at="2019-05-18T14:06:44Z" finished-at="2019-05-18T14:06:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchPackagesForAvailableCountries status=SUCCESS method=HomePageTest.searchPackagesForAvailableCountries()[pri:0, instance:pages.HomePageTest@cb5822] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setScreenshot -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:pages.HomePageTest@cb5822]" name="refreshPage" is-config="true" duration-ms="722" started-at="2019-05-18T14:06:44Z" finished-at="2019-05-18T14:06:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="verifyDepartureDates()[pri:0, instance:pages.HomePageTest@cb5822]" name="verifyDepartureDates" duration-ms="2449" started-at="2019-05-18T14:06:45Z" finished-at="2019-05-18T14:06:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDepartureDates -->
+        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:pages.HomePageTest@cb5822]" name="setScreenshot" is-config="true" duration-ms="0" started-at="2019-05-18T14:06:47Z" finished-at="2019-05-18T14:06:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDepartureDates status=SUCCESS method=HomePageTest.verifyDepartureDates()[pri:0, instance:pages.HomePageTest@cb5822] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setScreenshot -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:pages.HomePageTest@cb5822]" name="refreshPage" is-config="true" duration-ms="1552" started-at="2019-05-18T14:06:47Z" finished-at="2019-05-18T14:06:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="verifyLastMinuteDeals()[pri:0, instance:pages.HomePageTest@cb5822]" name="verifyLastMinuteDeals" duration-ms="8214" started-at="2019-05-18T14:06:49Z" finished-at="2019-05-18T14:06:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLastMinuteDeals -->
+        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:pages.HomePageTest@cb5822]" name="setScreenshot" is-config="true" duration-ms="0" started-at="2019-05-18T14:06:57Z" finished-at="2019-05-18T14:06:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLastMinuteDeals status=SUCCESS method=HomePageTest.verifyLastMinuteDeals()[pri:0, instance:pages.HomePageTest@cb5822] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setScreenshot -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:pages.HomePageTest@cb5822]" name="refreshPage" is-config="true" duration-ms="934" started-at="2019-05-18T14:06:57Z" finished-at="2019-05-18T14:06:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="verifyPackagesAreDisplayedByDeals()[pri:0, instance:pages.HomePageTest@cb5822]" name="verifyPackagesAreDisplayedByDeals" duration-ms="4501" started-at="2019-05-18T14:06:58Z" finished-at="2019-05-18T14:07:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPackagesAreDisplayedByDeals -->
+        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:pages.HomePageTest@cb5822]" name="setScreenshot" is-config="true" duration-ms="0" started-at="2019-05-18T14:07:02Z" finished-at="2019-05-18T14:07:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPackagesAreDisplayedByDeals status=SUCCESS method=HomePageTest.verifyPackagesAreDisplayedByDeals()[pri:0, instance:pages.HomePageTest@cb5822] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setScreenshot -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:pages.HomePageTest@cb5822]" name="refreshPage" is-config="true" duration-ms="1066" started-at="2019-05-18T14:07:02Z" finished-at="2019-05-18T14:07:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="verifyViewTour()[pri:0, instance:pages.HomePageTest@cb5822]" name="verifyViewTour" duration-ms="3804" started-at="2019-05-18T14:07:04Z" finished-at="2019-05-18T14:07:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyViewTour -->
+        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:pages.HomePageTest@cb5822]" name="setScreenshot" is-config="true" duration-ms="0" started-at="2019-05-18T14:07:07Z" finished-at="2019-05-18T14:07:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyViewTour status=SUCCESS method=HomePageTest.verifyViewTour()[pri:0, instance:pages.HomePageTest@cb5822] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setScreenshot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:pages.HomePageTest@cb5822]" name="tearDown" is-config="true" duration-ms="2616" started-at="2019-05-18T14:07:07Z" finished-at="2019-05-18T14:07:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pages.HomePageTest -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="35395" started-at="2019-05-18T12:07:10Z" finished-at="2019-05-18T12:07:45Z">
+      <class name="pages.LoginPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:pages.LoginPageTest@42e26948]" name="init" is-config="true" duration-ms="10045" started-at="2019-05-18T14:07:10Z" finished-at="2019-05-18T14:07:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:pages.LoginPageTest@42e26948]" name="refreshPage" is-config="true" duration-ms="1281" started-at="2019-05-18T14:07:20Z" finished-at="2019-05-18T14:07:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="verifyInvalidLogin()[pri:0, instance:pages.LoginPageTest@42e26948]" name="verifyInvalidLogin" duration-ms="11198" started-at="2019-05-18T14:07:21Z" finished-at="2019-05-18T14:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidLogin -->
+        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:pages.LoginPageTest@42e26948]" name="setScreenshot" is-config="true" duration-ms="1" started-at="2019-05-18T14:07:33Z" finished-at="2019-05-18T14:07:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidLogin status=SUCCESS method=LoginPageTest.verifyInvalidLogin()[pri:0, instance:pages.LoginPageTest@42e26948] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setScreenshot -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:pages.LoginPageTest@42e26948]" name="refreshPage" is-config="true" duration-ms="1335" started-at="2019-05-18T14:07:33Z" finished-at="2019-05-18T14:07:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="verifyLoginToTourRader()[pri:0, instance:pages.LoginPageTest@42e26948]" name="verifyLoginToTourRader" duration-ms="10126" started-at="2019-05-18T14:07:34Z" finished-at="2019-05-18T14:07:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToTourRader -->
+        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:pages.LoginPageTest@42e26948]" name="setScreenshot" is-config="true" duration-ms="0" started-at="2019-05-18T14:07:44Z" finished-at="2019-05-18T14:07:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginToTourRader status=SUCCESS method=LoginPageTest.verifyLoginToTourRader()[pri:0, instance:pages.LoginPageTest@42e26948] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setScreenshot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:pages.LoginPageTest@42e26948]" name="tearDown" is-config="true" duration-ms="1402" started-at="2019-05-18T14:07:44Z" finished-at="2019-05-18T14:07:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pages.LoginPageTest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Tests -->
+</testng-results>
