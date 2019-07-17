@@ -123,7 +123,7 @@ public class HomePage {
 	
 	public void verifyLastMinutedeals(){
 		String actualHeading=util.get_Element_Text(lastMinuteDeals);
-		org.testng.Assert.assertEquals(actualHeading, "Last Minute Deals", "Text is not as expected");
+		org.testng.Assert.assertEquals(actualHeading, "Last Minute Tour Deals", "Text is not as expected");
 		String actualMessage=util.get_Element_Text(lastMinuteDealMessage);
 		org.testng.Assert.assertEquals(actualMessage.contains("check out these last minute travel deals"), true);
 	}
