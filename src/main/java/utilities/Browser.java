@@ -24,11 +24,11 @@ public class Browser {
     {
 //    	driver = WebDriverFactory.getInstance(BrowserName);
     	 DesiredCapabilities dc = DesiredCapabilities.chrome();
-         driver = new RemoteWebDriver(new URL("http://my-selenium-grid-ip:4444/wd/hub"), dc);
+         driver = new RemoteWebDriver(new URL("http://35.246.142.197:4444/wd/hub"), dc);
     	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     	driver.manage().window().maximize();
     	
-    	http://35.246.142.197:4444/grid/console
+//    	http://35.246.142.197:4444/grid/console
         goTo(baseUrl);
     }
 
