@@ -1,73 +1,361 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.github.selenium-automation-framework-project</groupId>
-    <artifactId>SeleniumAutomationFrameworkProject</artifactId>
-    <version>0.1-SNAPSHOT</version>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com</groupId>
+	<artifactId>STARTBrowser_Automation</artifactId>
+	<packaging>jar</packaging>
+	<name>START_Browser_Automation</name>
 
-    <dependencies>
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<testng.selenium.endpoint>https://google.com</testng.selenium.endpoint>
+	</properties>
 
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>2.53.0</version>
+
+	<repositories>
+		<repository>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>fail</checksumPolicy>
+			</releases>
+			<id>Experitest.repo1</id>
+			<name>YourName</name>
+			<url>http://repo.experitest.com:8010/Maven2/</url>
+			<layout>default</layout>
+		</repository>
+		
+		<repository>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>fail</checksumPolicy>
+			</releases>
+			<id>Experitest.repo2</id>
+			<name>YourName</name>
+			<url>https://cloud.experitest.com/repo/</url>
+			<layout>default</layout>
+		</repository>
+		
+	
+    <repository>
+        <id>project-repo</id>
+        <url>file://${project.basedir}/src/main/resources/lib</url>
+    </repository>
+    
+    <repository>
+    <id>ext-release-local</id>
+    <url>http://splunk.artifactoryonline.com/splunk/ext-releases-local</url>
+  </repository>
+</repositories>
+		
+
+
+
+<dependencies>
+
+		
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+ 	 <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.11.0</version>
+    </dependency>  
+    
+<!-- https://mvnrepository.com/artifact/com.goebl/david-webb -->
+<dependency>
+    <groupId>com.goebl</groupId>
+    <artifactId>david-webb</artifactId>
+    <version>1.3.0</version>
+</dependency>
+
+		
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-support</artifactId>
+    <version>3.11.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured 
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>3.0.2</version>
+    <scope>test</scope>
+</dependency>
+-->
+
+<!-- https://mvnrepository.com/artifact/com.splunk/splunk -->
+<dependency>
+    <groupId>com.splunk</groupId>
+    <artifactId>splunk</artifactId>
+    <version>1.5.0.0</version>
+</dependency>
+
+
+
+<!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured  -->
+<dependency>
+    <groupId>com.jayway.restassured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>2.9.0</version>
+    <scope>test</scope>
+</dependency>
+
+
+
+		
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-server</artifactId>
+    <version>3.11.0</version>
+</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>3.1.0</version>
+    <scope>test</scope>
+</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-api</artifactId>
+    <version>3.11.0</version>
+</dependency>
+
+
+		<dependency>
+			<groupId>com.github.jsdevel</groupId>
+			<artifactId>testng-selenium</artifactId>
+			<version>0.10.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-chrome-driver</artifactId>
+    <version>3.11.0</version>
+</dependency>
+		<!-- https://mvnrepository.com/artifact/org.monte/screen-recorder -->
+<!-- <dependency>
+    <groupId>org.monte</groupId>
+    <artifactId>screen-recorder</artifactId>
+    <version>0.7.7</version>
+</dependency> -->
+		
+
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<!-- <dependency> <groupId>org.apache.logging.log4j</groupId> <artifactId>log4j-core</artifactId> 
+			<version>2.1</version> </dependency> -->
+
+		<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
+		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>2.0-m08-1</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-remote-driver</artifactId>
+			<version>3.11.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20160810</version>
+		</dependency>
+
+		<dependency>
+             <groupId>com.aventstack</groupId>
+             <artifactId>extentreports</artifactId>
+             <version>3.0.7</version>
         </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/com.jcraft/jsch -->
+<dependency>
+    <groupId>com.jcraft</groupId>
+    <artifactId>jsch</artifactId>
+    <version>0.1.54</version>
+</dependency>
+		
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-firefox-driver</artifactId>
+    <version>3.11.0</version>
+</dependency>
 
-        <dependency>
+
+<dependency>
+
+<groupId>org.apache.poi</groupId>
+
+<artifactId>poi</artifactId>
+
+<version>3.7</version>
+
+</dependency>
+
+
+<dependency>
+
+<groupId>net.anthavio</groupId>
+<artifactId>phanbedder-1.9.8</artifactId>
+<version>1.0.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.github.detro.ghostdriver/phantomjsdriver -->
+
+<dependency>
+<groupId>com.codeborne</groupId>
+<artifactId>phantomjsdriver</artifactId>
+<version>1.4.3</version>
+</dependency> 
+
+
+<dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.8</version>
-            <scope>test</scope>
-        </dependency>
-
-  <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+            <version>6.9.13.6</version>
+            <scope>compile</scope>
+</dependency>
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>3.4.0</version>
 </dependency>
-  
+
+<dependency>
+<groupId>javax.ws.rs</groupId>
+<artifactId>javax.ws.rs-api</artifactId>
+<version>2.0.1</version>
+</dependency>
 
 
-    </dependencies>
-    
-    <build>
-        <testSourceDirectory>src/test/java</testSourceDirectory>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>2.7</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.18.1</version>
-                <configuration>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+<dependency>
+<groupId>com.squareup.okhttp3</groupId>
+<artifactId>okhttp</artifactId>
+<version>3.9.1</version>
+</dependency>
+
+<dependency>
+<groupId>commons-configuration</groupId>
+<artifactId>commons-configuration</artifactId>
+<version>1.6</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-client -->
+
+
+
+<dependency>
+<groupId>com.sun.jersey</groupId>
+<artifactId>jersey-client</artifactId>
+<version>1.9.1</version>
+</dependency>
+
+
+
+<!-- https://mvnrepository.com/artifact/org.json/json -->
+
+
+<dependency>
+<groupId>com.googlecode.json-simple</groupId>
+<artifactId>json-simple</artifactId>
+<version>1.1.1</version>
+</dependency>
+
+
+<dependency>
+<groupId>javax.json</groupId>
+<artifactId>javax.json-api</artifactId>
+<version>1.1</version>
+</dependency>
+
+</dependencies>
+	
+
+	<build>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<additionalClasspathElements>
+						<additionalClasspathElement>lib/*</additionalClasspathElement>
+					</additionalClasspathElements>
+					<outputDirectory>${project.build.directory}/classes</outputDirectory>
+				</configuration>
+				<executions>
+					<execution>
+						<id>jdk8</id>
+						<phase>none</phase>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+						<configuration>
+							<fork>true</fork>
+							<meminitial>128m</meminitial>
+							<maxmem>1024m</maxmem>
+							<verbose>true</verbose>
+							<includes>
+								<include>src/userFlow/*.java</include>
+							</includes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						
+						<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<systemProperties>
+						<testng.selenium.endpoint>${testng.selenium.endpoint}</testng.selenium.endpoint>
+					</systemProperties>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<version>0.0.1-SNAPSHOT</version>
 </project>
+<!-- 
+<suiteXmlFile>src/test/resources/setup_Main_Welcome.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/courtesyInappHomepagemyvfwelcomeExp.xml</suiteXmlFile> -->

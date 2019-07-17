@@ -23,6 +23,25 @@ a:hover {
 }
 
 .wrapper {
+<<<<<<< HEAD
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 400px;
+    right: 0;
+    overflow: auto;
+}
+
+.navigator-root {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    overflow-y: auto;
+}
+
+=======
     overflow: hidden;
 }
 
@@ -38,6 +57,7 @@ a:hover {
     margin-top: 60px;
 }
 
+>>>>>>> 6078a0b7d565b19a03bf42fd2f351c7228d35cce
 .suite {
     margin: 0px 10px 10px 0px;
     background-color: #fff8dc;
@@ -111,6 +131,10 @@ a:hover {
     white-space: pre;
     font-family: monospace;
     font-size: 12px;
+<<<<<<< HEAD
+    font-weight: bold;
+=======
+>>>>>>> 6078a0b7d565b19a03bf42fd2f351c7228d35cce
     margin-top: 0px;
     margin-left: 20px;
 }
@@ -143,11 +167,21 @@ a:hover {
 }
 
 .top-banner-root {
+<<<<<<< HEAD
+    position: absolute;
+    top: 0;
+    height: 45px;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    margin: 0px 0px 5px 0px;
+=======
     position: fixed;
     width: 100%;
     padding: 5px;
     margin: 0px 0px 5px 0px;
     height: 45px;
+>>>>>>> 6078a0b7d565b19a03bf42fd2f351c7228d35cce
     background-color: #0066ff;
     font-family: Times;
     color: #fff;
