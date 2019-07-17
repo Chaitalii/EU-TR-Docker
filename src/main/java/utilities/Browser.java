@@ -1,8 +1,13 @@
 package utilities;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
 import webdriver.WebDriverFactory;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 /*
@@ -15,11 +20,15 @@ public class Browser {
 //    private static String BrowserVersion = PropertyLoader.loadProperty("browser.version");
     public static WebDriver driver;
 
-    public static void Initialize()
+    public static void Initialize() throws MalformedURLException
     {
-    	driver = WebDriverFactory.getInstance(BrowserName);
+//    	driver = WebDriverFactory.getInstance(BrowserName);
+    	 DesiredCapabilities dc = DesiredCapabilities.chrome();
+         driver = new RemoteWebDriver(new URL("http://my-selenium-grid-ip:4444/wd/hub"), dc);
     	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     	driver.manage().window().maximize();
+    	
+    	http://35.246.142.197:4444/grid/console
         goTo(baseUrl);
     }
 

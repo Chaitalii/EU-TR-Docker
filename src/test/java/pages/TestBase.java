@@ -17,6 +17,7 @@ import utilities.Browser;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 
 public abstract class TestBase {
 
@@ -24,7 +25,7 @@ public abstract class TestBase {
     private static final String SCREENSHOT_FORMAT = ".png";
 
     @BeforeClass
-    public void init() {
+    public void init() throws MalformedURLException {
         Browser.Initialize();
     }
     
