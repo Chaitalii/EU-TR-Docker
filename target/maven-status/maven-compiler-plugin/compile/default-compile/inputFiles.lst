@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:\Users\DeyC2\Assignments\TourRadar-EU\src\main\java\utilities\PropertyLoader.java
 C:\Users\DeyC2\Assignments\TourRadar-EU\src\main\java\pages\Pages.java
 C:\Users\DeyC2\Assignments\TourRadar-EU\src\main\java\pages\LoginPage.java
@@ -6,10 +5,3 @@ C:\Users\DeyC2\Assignments\TourRadar-EU\src\main\java\pages\HomePage.java
 C:\Users\DeyC2\Assignments\TourRadar-EU\src\main\java\utilities\Browser.java
 C:\Users\DeyC2\Assignments\TourRadar-EU\src\main\java\webdriver\WebDriverFactory.java
 C:\Users\DeyC2\Assignments\TourRadar-EU\src\main\java\utilities\Utils.java
-=======
-C:\Users\DeyC2\Practice\selenium-automation-framework-master\src\main\java\pages\Pages.java
-C:\Users\DeyC2\Practice\selenium-automation-framework-master\src\main\java\pages\HomePage.java
-C:\Users\DeyC2\Practice\selenium-automation-framework-master\src\main\java\utilities\Browser.java
-C:\Users\DeyC2\Practice\selenium-automation-framework-master\src\main\java\webdriver\WebDriverFactory.java
-C:\Users\DeyC2\Practice\selenium-automation-framework-master\src\main\java\utilities\PropertyLoader.java
->>>>>>> 6078a0b7d565b19a03bf42fd2f351c7228d35cce

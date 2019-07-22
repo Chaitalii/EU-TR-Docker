@@ -1,0 +1,7 @@
+utilities\Browser.class
+utilities\Utils.class
+pages\LoginPage.class
+pages\HomePage.class
+pages\Pages.class
+webdriver\WebDriverFactory.class
+utilities\PropertyLoader.class
