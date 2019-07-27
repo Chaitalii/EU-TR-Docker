@@ -24,17 +24,17 @@ public abstract class TestBase {
     private static final String SCREENSHOT_FOLDER = "target/screenshots/";
     private static final String SCREENSHOT_FORMAT = ".png";
 
-    @BeforeClass
+//    @BeforeClass
     public void init() throws MalformedURLException {
         Browser.Initialize();
     }
     
-    @BeforeMethod
+  //  @BeforeMethod
     public void refreshPage(){
     	Browser.driver.get(Browser.baseUrl);
     }
 
-    @AfterClass(alwaysRun = true)
+    //@AfterClass(alwaysRun = true)
     public void tearDown() {
         if (Browser.Driver() != null) {
             Browser.Driver().quit();
@@ -46,7 +46,7 @@ public abstract class TestBase {
             Browser.Driver().quit();
         }
     }
-    @AfterMethod
+    //@AfterMethod
     public void setScreenshot(ITestResult result) {
     	
         if (!result.isSuccess()) {

@@ -9,7 +9,7 @@ public class HomePageTest extends TestBase{
 	HomePage obj_HomePage= new HomePage();
 	
 //	This test is to verify first departure date displayed in the list is same as current month and no past date is displayed under departure date selection.
-	@Test
+//	@Test
 	public void verifyDepartureDates(){
 		obj_HomePage.verifyFirstDepartureMonth();
 		obj_HomePage.verifyPastDatesNotDisplayed();
@@ -17,26 +17,26 @@ public class HomePageTest extends TestBase{
 	
 //	This test is to verify, on clicking View Tour button, user is navigated to a page related to the clicked tour and all the supplied elements. 
 //	The elements that are intended to be verified can be added to the list- xpathElementsInViewTourPage(mentioned in homepage). If any missing elements would fail the testcase.
-	@Test
+//	@Test
 	public void verifyViewTour() throws InterruptedException{
 		obj_HomePage.verifyViewTour();
 		
 	}
 	
 //	This test is to make sure Last Minute deals are only selected (and not any other deals)when Last Minute Deals category is selected
-	@Test
+//	@Test
 	public void verifyLastMinuteDeals(){
 		obj_HomePage.clickOnDeals();
 		obj_HomePage.verifyLastMinutedeals();
 	}
 //	this test is to amke sure user can sort the tours by deals and after the sorting, tours are displayed as per the correct sorting order of savings.
-	@Test
+//	@Test
 	public void verifyPackagesAreDisplayedByDeals() throws InterruptedException{
 		obj_HomePage.sortToursBySelection("deals");
 		obj_HomePage.verifypackagesBySortedSavings();
 	}
 
-     @Test
+  //   @Test
     //this test is to verify tours are sorted by popularity by default and at least one  tour is available for the countries listed in the website
     public void searchPackagesForAvailableCountries() throws InterruptedException {
     	obj_HomePage.searchHolidayPackages();
@@ -51,4 +51,12 @@ public class HomePageTest extends TestBase{
      	obj_HomePage.searchHolidayPackages();
      	obj_HomePage.verifydisplayedTrips();
      }
+	@Test
+      public void addition() throws InterruptedException{
+      int a=10;
+      int b=4;
+      int c=a+b;
+      System.out.println(c);
+
+	}
 }

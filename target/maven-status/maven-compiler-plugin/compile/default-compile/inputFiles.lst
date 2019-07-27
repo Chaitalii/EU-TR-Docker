@@ -1,7 +1,7 @@
-C:\Users\DeyC2\Assignments\TourRadar-EU\src\main\java\utilities\PropertyLoader.java
-C:\Users\DeyC2\Assignments\TourRadar-EU\src\main\java\pages\Pages.java
-C:\Users\DeyC2\Assignments\TourRadar-EU\src\main\java\pages\LoginPage.java
-C:\Users\DeyC2\Assignments\TourRadar-EU\src\main\java\pages\HomePage.java
-C:\Users\DeyC2\Assignments\TourRadar-EU\src\main\java\utilities\Browser.java
-C:\Users\DeyC2\Assignments\TourRadar-EU\src\main\java\webdriver\WebDriverFactory.java
-C:\Users\DeyC2\Assignments\TourRadar-EU\src\main\java\utilities\Utils.java
+/code/EU-TR-Docker/src/main/java/utilities/Utils.java
+/code/EU-TR-Docker/src/main/java/webdriver/WebDriverFactory.java
+/code/EU-TR-Docker/src/main/java/utilities/Browser.java
+/code/EU-TR-Docker/src/main/java/pages/Pages.java
+/code/EU-TR-Docker/src/main/java/pages/HomePage.java
+/code/EU-TR-Docker/src/main/java/pages/LoginPage.java
+/code/EU-TR-Docker/src/main/java/utilities/PropertyLoader.java

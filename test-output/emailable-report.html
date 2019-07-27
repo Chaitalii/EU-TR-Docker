@@ -1,126 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<<<<<<< HEAD
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Default suite</th></tr><tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">2</td><td class="num">3,043,591</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">pages.HomePageTest</td><td><a href="#m0">verifyLastMinuteDeals</a></td><td rowspan="1">1563390820704</td><td rowspan="1">1659</td></tr><tr class="failedeven"><td><a href="#m1">verifyViewTour</a></td><td rowspan="1">1563390830713</td><td rowspan="1">3002683</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">pages.HomePageTest</td><td><a href="#m2">searchPackagesForAvailableCountries</a></td><td rowspan="1">1563390807251</td><td rowspan="1">4897</td></tr><tr class="passedeven"><td><a href="#m3">verifyDepartureDates</a></td><td rowspan="1">1563390816095</td><td rowspan="1">1251</td></tr><tr class="passedeven"><td><a href="#m4">verifyPackagesAreDisplayedByDeals</a></td><td rowspan="1">1563390824176</td><td rowspan="1">5751</td></tr></tbody></table><h2>Default test</h2><h3 id="m0">pages.HomePageTest#verifyLastMinuteDeals</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Text is not as expected expected [Last Minute Deals] but found [Last Minute Tour Deals]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at pages.HomePage.verifyLastMinutedeals(HomePage.java:126)
-	at pages.HomePageTest.verifyLastMinuteDeals(HomePageTest.java:30)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">pages.HomePageTest#verifyViewTour</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: One or more elements are missing from the page
-	at org.testng.Assert.fail(Assert.java:94)
-	at utilities.Utils.verifyAllUIElements(Utils.java:253)
-	at pages.HomePage.verifyViewTour(HomePage.java:137)
-	at pages.HomePageTest.verifyViewTour(HomePageTest.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">pages.HomePageTest#searchPackagesForAvailableCountries</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">pages.HomePageTest#verifyDepartureDates</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">pages.HomePageTest#verifyPackagesAreDisplayedByDeals</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
-=======
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>TestNG:  Unit Test</title>
-<style type="text/css">
-table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
-table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
-border:1px solid #000099;padding:.25em .5em .25em .5em
-}
-table.result th {vertical-align:bottom}
-tr.param th {padding-left:1em;padding-right:1em}
-tr.param td {padding-left:.5em;padding-right:2em}
-td.numi,th.numi,td.numi_attn {
-text-align:right
-}
-tr.total td {font-weight:bold}
-table caption {
-text-align:center;font-weight:bold;
-}
-table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
-table.passed td,table tr.passedeven td {background-color: #33FF33;}
-table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
-table.passed td,table tr.skippedodd td {background-color: #dddddd;}
-table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
-table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
-tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
-p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
-div.shootout {padding:2em;border:3px #4854A8 solid}
-</style>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
 </head>
 <body>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test1</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">37.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Test2</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">35.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="total"><td>Total</td>
-<td class="numi">7</td><td class="numi">7</td><td class="numi">0</td><td class="numi">0</td><td class="numi">73.0 seconds</td><td colspan="2">&nbsp;</td></tr>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Tests</th></tr>
+<tr><td><a href="#t0">Test1</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test2</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">13</th><th colspan="2"></th></tr>
 </table>
-<table cellspacing="0" cellpadding="0" class="passed" id="summary">
-<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Test1 &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="5">pages.HomePageTest</td><td><a href="#m1"><b>searchPackagesForAvailableCountries</b>  </a></td><td class="numi">1</td><td>1558181202190</td><td class="numi">2424</td></tr><tr class="passedodd"><td><a href="#m2"><b>verifyDepartureDates</b>  </a></td><td class="numi">1</td><td>1558181205341</td><td class="numi">2449</td></tr><tr class="passedodd"><td><a href="#m3"><b>verifyLastMinuteDeals</b>  </a></td><td class="numi">1</td><td>1558181209345</td><td class="numi">8214</td></tr><tr class="passedodd"><td><a href="#m4"><b>verifyPackagesAreDisplayedByDeals</b>  </a></td><td class="numi">1</td><td>1558181218495</td><td class="numi">4501</td></tr><tr class="passedodd"><td><a href="#m5"><b>verifyViewTour</b>  </a></td><td class="numi">1</td><td>1558181224065</td><td class="numi">3804</td></tr>
-<tr><th colspan="4">Test2 &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">pages.LoginPageTest</td><td><a href="#m6"><b>verifyInvalidLogin</b>  </a></td><td class="numi">1</td><td>1558181241902</td><td class="numi">11198</td></tr><tr class="passedodd"><td><a href="#m7"><b>verifyLoginToTourRader</b>  </a></td><td class="numi">1</td><td>1558181254438</td><td class="numi">10126</td></tr>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Tests</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<tbody id="t1"><tr><th colspan="4" class="invisible"/></tr></tbody>
 </table>
-<h1>Test1</h1>
-<h2 id="m1">pages.HomePageTest:searchPackagesForAvailableCountries</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">pages.HomePageTest:verifyViewTour</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">pages.HomePageTest:verifyPackagesAreDisplayedByDeals</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">pages.HomePageTest:verifyDepartureDates</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">pages.HomePageTest:verifyLastMinuteDeals</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Test2</h1>
-<h2 id="m6">pages.LoginPageTest:verifyLoginToTourRader</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">pages.LoginPageTest:verifyInvalidLogin</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-</body></html>
->>>>>>> 6078a0b7d565b19a03bf42fd2f351c7228d35cce
+<h2>Test1</h2><h2>Test2</h2></body>
+</html>

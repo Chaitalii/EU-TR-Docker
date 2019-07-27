@@ -33,17 +33,6 @@ $(document).ready(function() {
             contents.hide();
         }
     });
-<<<<<<< HEAD
-=======
-
-    // Keep the navigator div always visible
-    var $scrollingDiv = $(".navigator-root");
-    $(window).scroll(function() {
-        $scrollingDiv.css('height', $(window).height() - 65);
-        $scrollingDiv.stop()
-            .animate({"marginTop": ($(window).scrollTop() + 60) + "px"} );
-    });
->>>>>>> 6078a0b7d565b19a03bf42fd2f351c7228d35cce
 });
 
 // The handlers that take care of showing/hiding the methods
