@@ -23,12 +23,12 @@ public class Browser {
     public static void Initialize() throws MalformedURLException
     {
   //  	driver = WebDriverFactory.getInstance(BrowserName);
-//	 DesiredCapabilities dc = DesiredCapabilities.chrome();
-//         driver = new RemoteWebDriver(new URL("http://35.198.121.20:4444/wd/hub"), dc);
+	 DesiredCapabilities dc = DesiredCapabilities.chrome();
+         driver = new RemoteWebDriver(new URL("http://35.198.121.20:4444/wd/hub"), dc);
   //  	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     //	driver.manage().window().maximize();
     	
-//       goTo(baseUrl);
+       goTo(baseUrl);
     }
 
     public static String getTitle()
